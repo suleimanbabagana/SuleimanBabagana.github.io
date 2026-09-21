@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Suleiman Abubakar Babagana, PhD | Academic Website</title>
+
+  <meta name="description" content="Academic website of Suleiman Abubakar Babagana, PhD, Reader (Associate Professor) of Management, Nigerian Army University Biu. Research in Military Performance Management, Strategic Performance Management, Performance Management, Defence Management and Human Resource Management.">
+
+  <style>
+    :root {
+      --navy: #10283f;
+      --green: #184d3b;
+      --gold: #b38a3d;
+      --cream: #f7f5ef;
+      --white: #ffffff;
+      --text: #26343d;
+      --muted: #66747c;
+      --line: #e2e5e3;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    /* Navigation */
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      font-size: 1.05rem;
+      font-weight: bold;
+      letter-spacing: .3px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-family: Arial, sans-serif;
+      font-size: .9rem;
+    }
+
+    .nav-links a:hover {
+      color: #e5c67b;
+    }
+
+    /* Hero */
+
+    .hero {
+      background:
+        linear-gradient(rgba(16,40,63,.94), rgba(24,77,59,.91));
+      color: var(--white);
+      padding: 105px 0 95px;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      color: #e6c879;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: Arial, sans-serif;
+      font-size: .82rem;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 4.3rem);
+      line-height: 1.08;
+      margin-bottom: 18px;
+    }
+
+    .hero-title {
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      color: #f0e5c5;
+      margin-bottom: 24px;
+    }
+
+    .hero-position {
+      font-size: 1.05rem;
+      margin-bottom: 25px;
+    }
+
+    .hero-summary {
+      max-width: 830px;
+      font-size: 1.08rem;
+      color: #edf1f2;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 18px;
+      border-radius: 4px;
+      font-family: Arial, sans-serif;
+      font-size: .9rem;
+      font-weight: bold;
+      border: 1px solid transparent;
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #fff;
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,.65);
+      color: #fff;
+    }
+
+    .btn:hover {
+      opacity: .88;
+    }
+
+    /* General sections */
+
+    section {
+      padding: 78px 0;
+    }
+
+    section:nth-of-type(even) {
+      background: var(--cream);
+    }
+
+    .section-kicker {
+      color: var(--gold);
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: .78rem;
+      letter-spacing: 1.8px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      color: var(--navy);
+      font-size: 2rem;
+      line-height: 1.25;
+      margin-bottom: 22px;
+    }
+
+    h3 {
+      color: var(--green);
+      margin-bottom: 8px;
+      line-height: 1.35;
+    }
+
+    p + p {
+      margin-top: 15px;
+    }
+
+    .lead {
+      max-width: 900px;
+      font-size: 1.08rem;
+    }
+
+    /* Research areas */
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .focus-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-top: 4px solid var(--green);
+      padding: 24px;
+      min-height: 115px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.035);
+    }
+
+    /* MPM */
+
+    .mpm-box {
+      border-left: 5px solid var(--gold);
+      padding: 25px 30px;
+      background: #fff;
+      margin-top: 30px;
+    }
+
+    .mpm-levels {
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: var(--navy);
+    }
+
+    .level {
+      background: #eef2ef;
+      padding: 10px 14px;
+      border-radius: 3px;
+    }
+
+    .arrow {
+      color: var(--gold);
+      font-size: 1.3rem;
+    }
+
+    /* Publications */
+
+    .publication {
+      padding: 23px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .publication:last-child {
+      border-bottom: 0;
+    }
+
+    .publication-title {
+      color: var(--navy);
+      font-weight: bold;
+      font-size: 1.04rem;
+    }
+
+    .publication-meta {
+      color: var(--muted);
+      margin-top: 5px;
+    }
+
+    /* Leadership */
+
+    .leadership-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 32px;
+    }
+
+    .leadership-card {
+      padding: 25px;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+
+    /* Collaboration */
+
+    .collaboration {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .collaboration h2 {
+      color: #fff;
+    }
+
+    .collaboration .section-kicker {
+      color: #e6c879;
+    }
+
+    .collaboration p {
+      max-width: 900px;
+    }
+
+    /* Profiles */
+
+    .profile-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .profile-link {
+      border: 1px solid var(--line);
+      padding: 11px 16px;
+      font-family: Arial, sans-serif;
+      font-size: .9rem;
+      background: #fff;
+      color: var(--navy);
+    }
+
+    /* Footer */
+
+    footer {
+      background: #0b1e2f;
+      color: #dbe1e4;
+      padding: 35px 0;
+      font-family: Arial, sans-serif;
+      font-size: .88rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    @media (max-width: 850px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 0;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .focus-grid,
+      .leadership-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 75px 0;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">Suleiman Abubakar Babagana, PhD</div>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#mpm">MPM</a>
+        <a href="#publications">Publications</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#collaboration">Collaboration</a>
+        <a href="#profiles">Profiles</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+
+      <div class="eyebrow">Academic • Research • Defence Management</div>
+
+      <h1>Suleiman Abubakar Babagana, PhD</h1>
+
+      <div class="hero-title">
+        Management Scholar | Military Performance Management (MPM) |
+        Strategic Performance &amp; Defence Management
+      </div>
+
+      <div class="hero-position">
+        <strong>Reader (Associate Professor) of Management</strong><br>
+        Nigerian Army University Biu, Nigeria<br>
+        Coordinator, Centre for Military Performance Management (CMPM)
+      </div>
+
+      <p class="hero-summary">
+        My scholarship focuses on the application of management and
+        performance-management principles to organisations and institutions,
+        with an emerging specialization in Military Performance Management
+        (MPM). My research examines how individual, unit and institutional
+        performance can be aligned with organisational capabilities and
+        strategic objectives, with particular attention to military and
+        defence institutions.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-gold" href="#research">Research</a>
+        <a class="btn btn-outline" href="#publications">Publications</a>
+        <a class="btn btn-outline" href="#mpm">Explore MPM</a>
+        <a class="btn btn-outline"
+           href="https://scholar.google.com/citations?hl=en&user=3H2tQCAAAAAJ"
+           target="_blank" rel="noopener">Google Scholar</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="about">
+  <div class="container">
+
+    <div class="section-kicker">Academic Profile</div>
+    <h2>Management, Performance and Institutional Effectiveness</h2>
+
+    <div class="lead">
+      <p>
+        I am a Management scholar at Nigerian Army University Biu, Nigeria.
+        My academic work spans human resource management, performance
+        appraisal, organisational behaviour, performance management,
+        strategic performance management and institutional effectiveness.
+      </p>
+
+      <p>
+        Building on this foundation, my current research programme focuses
+        particularly on developing the conceptual, theoretical and empirical
+        foundations of Military Performance Management and examining its
+        contribution to personnel performance, institutional effectiveness,
+        military capability and strategic defence objectives.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="research">
+  <div class="container">
+
+    <div class="section-kicker">Research</div>
+    <h2>Research Focus</h2>
+
+    <p class="lead">
+      My research agenda examines how management systems, human resources,
+      organisational processes and strategic alignment contribute to
+      sustained individual, organisational and institutional performance.
+    </p>
+
+    <div class="focus-grid">
+
+      <div class="focus-card">
+        <h3>Military Performance Management (MPM)</h3>
+      </div>
+
+      <div class="focus-card">
+        <h3>Strategic Performance Management</h3>
+      </div>
+
+      <div class="focus-card">
+        <h3>Performance Management</h3>
+      </div>
+
+      <div class="focus-card">
+        <h3>Military Effectiveness</h3>
+      </div>
+
+      <div class="focus-card">
+        <h3>Defence Management</h3>
+      </div>
+
+      <div class="focus-card">
+        <h3>Institutional Effectiveness</h3>
+      </div>
+
+      <div class="focus-card">
+        <h3>Human Resource Management</h3>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="mpm">
+  <div class="container">
+
+    <div class="section-kicker">Current Research Programme</div>
+    <h2>Military Performance Management</h2>
+
+    <div class="mpm-box">
+
+      <p>
+        A major focus of my current scholarship is Military Performance
+        Management (MPM), an emerging interdisciplinary area connecting
+        performance management, strategic management, human resource
+        management and defence-management perspectives.
+      </p>
+
+      <p>
+        This research approaches military performance as a multi-level
+        phenomenon extending beyond individual appraisal to the management,
+        alignment and improvement of performance across personnel, units,
+        institutions, military capability and strategic defence objectives.
+      </p>
+
+      <div class="mpm-levels">
+        <span class="level">Individual Military Performance</span>
+        <span class="arrow">→</span>
+        <span class="level">Unit Performance</span>
+        <span class="arrow">→</span>
+        <span class="level">Institutional Performance</span>
+        <span class="arrow">→</span>
+        <span class="level">Military Capability</span>
+        <span class="arrow">→</span>
+        <span class="level">Strategic Defence Performance</span>
+      </div>
+
+      <p style="margin-top:25px;">
+        The programme further examines the roles of leadership, human
+        resources, training, doctrine, organisational systems, resources,
+        technology, accountability and institutional adaptation in supporting
+        military and strategic objectives.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="publications">
+  <div class="container">
+
+    <div class="section-kicker">Scholarship</div>
+    <h2>Selected Publications in Military Performance Management</h2>
+
+    <div class="publication">
+      <div class="publication-title">
+        Military Performance Management and Institutional Effectiveness in
+        the Nigerian Army: A Conceptual Framework for Strategic Knowledge
+        Partnership with the Nigerian Army University Biu (NAUB)
+      </div>
+      <div class="publication-meta">
+        NDA Journal of Military Science and Disciplinary Studies,
+        4(1), 1–14, 2026.
+      </div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        Strategic Performance Management and Military Effectiveness:
+        Developing a Multidimensional Framework for the Nigerian Army in
+        Complex Security Environments
+      </div>
+      <div class="publication-meta">
+        Yamtara Wala Journal of Arts, Management and Social Sciences,
+        8(1), 50–73, 2026.
+      </div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        Beyond Appraisal: Performance Management and Personnel Performance
+        in the Nigerian Army
+      </div>
+      <div class="publication-meta">
+        Gusau Journal of Business Administration, 5(1), 44–56, 2026.
+      </div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        Military Performance Management: A Multi-Theoretical Approach to
+        Strategy, Accountability, and Adaptation
+      </div>
+      <div class="publication-meta">
+        POLAC International Journal of Economics &amp; Management Science,
+        12(3), 73–83, 2025.
+      </div>
+    </div>
+
+    <div class="publication">
+      <div class="publication-title">
+        Strategic Knowledge Partnership and Military Performance Management:
+        Positioning the Nigerian Army University Biu within Nigerian Army
+        Effectiveness
+      </div>
+      <div class="publication-meta">
+        International Journal of Intellectual Discourse,
+        8(4), 406–416, 2025.
+      </div>
+    </div>
+
+    <div class="buttons">
+      <a class="btn btn-gold"
+         href="https://scholar.google.com/citations?hl=en&user=3H2tQCAAAAAJ"
+         target="_blank" rel="noopener">Google Scholar</a>
+
+      <a class="btn btn-gold"
+         href="https://orcid.org/0009-0008-3332-2686"
+         target="_blank" rel="noopener">ORCID</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="leadership">
+  <div class="container">
+
+    <div class="section-kicker">Academic Leadership</div>
+    <h2>Current Academic &amp; Institutional Engagement</h2>
+
+    <p class="lead">
+      Alongside teaching and research in Management, I contribute to academic
+      and institutional development at Nigerian Army University Biu through
+      responsibilities in Military Performance Management, postgraduate
+      programme coordination, and Basic and Pre-Degree programme
+      administration.
+    </p>
+
+    <div class="leadership-grid">
+
+      <div class="leadership-card">
+        <h3>Centre for Military Performance Management</h3>
+        <p>Coordinator, CMPM</p>
+      </div>
+
+      <div class="leadership-card">
+        <h3>Directorate of Basic and Pre-Degree Programmes</h3>
+        <p>Director</p>
+      </div>
+
+      <div class="leadership-card">
+        <h3>Departmental Postgraduate Programmes</h3>
+        <p>Coordinator</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="collaboration" id="collaboration">
+  <div class="container">
+
+    <div class="section-kicker">Engagement</div>
+    <h2>Research &amp; Institutional Collaboration</h2>
+
+    <p>
+      I welcome scholarly and institutional collaboration in Military
+      Performance Management, Strategic Performance Management, Performance
+      Management, Defence Management, Military Effectiveness, Institutional
+      Effectiveness and Human Resource Management.
+    </p>
+
+    <p>
+      Areas of particular interest include collaborative research,
+      comparative military-performance studies, research grants, visiting
+      academic engagements, postgraduate research, executive education and
+      knowledge partnerships involving universities, defence institutions
+      and research organisations.
+    </p>
+
+  </div>
+</section>
+
+
+<section id="profiles">
+  <div class="container">
+
+    <div class="section-kicker">Academic Identity</div>
+    <h2>Professional Profiles</h2>
+
+    <div class="profile-links">
+
+      <a class="profile-link"
+         href="https://scholar.google.com/citations?hl=en&user=3H2tQCAAAAAJ"
+         target="_blank" rel="noopener">Google Scholar</a>
+
+      <a class="profile-link"
+         href="https://orcid.org/0009-0008-3332-2686"
+         target="_blank" rel="noopener">ORCID</a>
+
+      <a class="profile-link"
+         href="https://www.linkedin.com/in/suleiman-abubakar-babagana/"
+         target="_blank" rel="noopener">LinkedIn</a>
+
+      <a class="profile-link"
+         href="https://naub.edu.ng/directorate-of-pre-degree-programmes/"
+         target="_blank" rel="noopener">Official NAUB Profile</a>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+
+<footer>
+  <div class="container footer-inner">
+    <div>
+      © 2026 Suleiman Abubakar Babagana. Personal Academic Website.
+    </div>
+
+    <div>
+      Management • Performance Management • Military Performance Management
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
