@@ -409,19 +409,54 @@
     }
   
     /* Dedicated About page */
-    .about-hero { position: relative; overflow: hidden; }
-    
-    .about-hero .container { position: relative; min-height: 430px; }
-    .about-hero .hero-content { max-width: 620px;; padding-right: 40px; }
-    .about-hero .hero-photo { right: 1%; width: 230px; height: auto; }
-    .about-hero h1 { font-size: 3.2rem; line-height: 0.98; }
-    .about-hero .hero-title {
-    font-size: 1.25rem;
-    line-height: 1.20;
-    .about-section { background: var(--white); }
-        .about-hero .hero-position {
-    font-size: 0.95rem;
-    line-height: 1.25;
+    .about-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 55px 0;
+}
+
+.about-hero .container {
+    position: relative;
+    min-height: 390px;
+}
+
+.about-hero .hero-content {
+    max-width: 680px;
+    padding-right: 30px;
+}
+
+.about-hero .hero-photo {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 270px;
+    height: auto;
+}
+
+.about-hero .hero-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.about-hero h1 {
+    font-size: 2.65rem;
+    line-height: 1.02;
+    margin-bottom: 18px;
+}
+
+.about-hero .hero-title {
+    font-size: 1.08rem;
+    line-height: 1.30;
+    margin-bottom: 24px;
+}
+
+.about-hero .hero-position {
+    font-size: 0.92rem;
+    line-height: 1.40;
+}
     .about-grid { display:grid; grid-template-columns:1.55fr .85fr; gap:48px; align-items:start; margin-top:30px; }
     .about-copy p { font-size:1.04rem; }
     .about-side { background:var(--cream); border-top:4px solid var(--gold); padding:28px; }
@@ -433,21 +468,58 @@
     .pathway-links { display:flex; flex-wrap:wrap; gap:12px; margin-top:25px; }
     .pathway-link { border:1px solid var(--line); padding:11px 16px; font-family:Arial,sans-serif; font-size:.9rem; background:#fff; color:var(--navy); }
     .pathway-link:hover { border-color:var(--gold); }
-    @media (max-width:700px) { 
-      .about-hero .container { min-height:0; }
-      .about-hero .hero-content { max-width:none; padding-right:0; }
-      .about-hero .hero-photo { height:auto; margin-left:auto; margin-right:auto; }
-      .about-hero .hero-photo img { height:auto; object-fit:contain; }
-      .about-grid, .about-cards { grid-template-columns:1fr; }
+    @media (max-width: 900px) {
+    .about-hero {
+        padding: 42px 0;
     }
 
+    .about-hero .container {
+        min-height: 0;
+    }
+
+    .about-hero .hero-content {
+        max-width: 100%;
+        padding-right: 0;
+    }
+
+    .about-hero .hero-photo {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 230px;
+        margin: 32px auto 0;
+    }
+
+    .about-hero h1 {
+        font-size: 2.25rem;
+        line-height: 1.05;
+    }
+
+    .about-hero .hero-title {
+        font-size: 1rem;
+        line-height: 1.30;
+    }
+
+    .about-hero .hero-position {
+        font-size: 0.90rem;
+        line-height: 1.40;
+    }
+
+    .about-grid,
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+This restores 900p
 </style>
 </head>
 <body>
 <header><div class="container"><nav>
-<div class="brand"><a href="file:///C:/Users/Pre%20Degree/Downloads/index.html">Suleiman Abubakar Babagana, PhD</a></div>
+<div class="brand"><a href="index.html">Suleiman Abubakar Babagana, PhD</a></div>
 <div class="nav-links">
-<a href="file:///C:/Users/Pre%20Degree/Downloads/about.html">About</a><a href="file:///C:/Users/Pre%20Degree/Downloads/index.html#research">Research</a><a href="file:///C:/Users/Pre%20Degree/Downloads/index.html#mpm">MPM</a><a href="file:///C:/Users/Pre%20Degree/Downloads/index.html#publications">Publications</a><a href="file:///C:/Users/Pre%20Degree/Downloads/index.html#teaching">Teaching</a><a href="file:///C:/Users/Pre%20Degree/Downloads/index.html#leadership">Leadership</a><a href="file:///C:/Users/Pre%20Degree/Downloads/index.html#collaboration">Collaboration</a><a href="file:///C:/Users/Pre%20Degree/Downloads/index.html#profiles">Profiles</a>
+<a href="about.html">About</a><a href="index.html#research">Research</a><a href="index.html#mpm">MPM</a><a href="index.html#publications">Publications</a><a href="index.html#teaching">Teaching</a><a href="index.html#leadership">Leadership</a><a href="index.html#collaboration">Collaboration</a><a href="index.html#profiles">Profiles</a>
 </div></nav></div></header>
 
 <main>
