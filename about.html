@@ -416,6 +416,8 @@
 }
 
 .about-hero .container {
+    display: grid;
+grid-template-columns: minmax(0, 1fr) 270px;
     position: relative;
     min-height: 390px;
 }
@@ -425,14 +427,17 @@
     padding-right: 30px;
 }
 
-.about-hero .hero-photo {
-    position: absolute;
-    right: 4%;
-    top: 50%;
-    transform: translateY(-50%);
+..about-hero .hero-photo {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
     width: 270px !important;
     height: auto;
     margin: 0;
+    align-self: center;
+    justify-self: end;
+}
 
 .about-hero .hero-photo img {
     width: 100%;
