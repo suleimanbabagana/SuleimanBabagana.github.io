@@ -292,25 +292,51 @@
     }
 
     .pathway {
-      margin-top: 32px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.88rem;
-      font-weight: 700;
-    }
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
 
-    .pathway span {
-      padding: 10px 13px;
-      border: 1px solid rgba(255,255,255,0.32);
-      background: rgba(255,255,255,0.06);
-    }
+.pathway span {
+  padding: 10px 12px;
+  border: 1px solid rgba(255,255,255,0.24);
+  background: rgba(255,255,255,0.06);
+  text-align: center;
+  line-height: 1.35;
+  flex: 1 1 0;
+  min-width: 0;
+}
 
-    .pathway b {
-      color: #dfc18b;
-    }
+.pathway b {
+  color: #dfc18b;
+  flex: 0 0 auto;
+}
+
+/* Responsive MPM pathway */
+@media (max-width: 900px) {
+  .pathway {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .pathway span {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pathway b {
+    text-align: center;
+    line-height: 1;
+    transform: rotate(90deg);
+  }
+}
 
     /* PATHWAYS */
 
